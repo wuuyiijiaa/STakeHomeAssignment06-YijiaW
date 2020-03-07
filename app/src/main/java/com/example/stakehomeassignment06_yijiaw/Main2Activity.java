@@ -27,8 +27,8 @@ public class Main2Activity extends AppCompatActivity {
         textView = (TextView)findViewById(R.id.text_view);
 
         String s = "Total: " + d + "\n"
-                + "Sales Tax: " + d2 + "\n"
-                + "Tip: " + d3 + "\n"
+                + "Sales Tax: " + d2*d + "\n"
+                + "Tip: " + d3*d + "\n"
                 + "Grand Total: " + grandTotal;
 
         textView.setText(s);
