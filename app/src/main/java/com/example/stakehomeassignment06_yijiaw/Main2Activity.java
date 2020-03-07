@@ -23,12 +23,12 @@ public class Main2Activity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.text_view);
 
-        String s = "Total: " + d + "\n"
+        String string = "Total: " + d + "\n"
                 + "Sales Tax: " + d2 * d + "\n"
                 + "Tip: " + d3 * d + "\n"
                 + "Grand Total: " + (d + d * d2 + d * d3);
 
-        textView.setText(s);
+        textView.setText(string);
 
 
     }
