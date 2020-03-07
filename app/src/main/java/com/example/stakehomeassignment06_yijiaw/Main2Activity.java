@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     TextView textView;
-    double grandTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,20 +15,18 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
 
-
         Intent receivingIntent = getIntent();
         Double d = receivingIntent.getDoubleExtra("KEY_STRING_1", 0);
         Double d2 = receivingIntent.getDoubleExtra("KEY_STRING_2", 0);
         Double d3 = receivingIntent.getDoubleExtra("KEY_STRING_3", 0);
 
-        grandTotal = d + d*d2 + d*d3;
 
-        textView = (TextView)findViewById(R.id.text_view);
+        textView = (TextView) findViewById(R.id.text_view);
 
         String s = "Total: " + d + "\n"
-                + "Sales Tax: " + d2*d + "\n"
-                + "Tip: " + d3*d + "\n"
-                + "Grand Total: " + grandTotal;
+                + "Sales Tax: " + d2 * d + "\n"
+                + "Tip: " + d3 * d + "\n"
+                + "Grand Total: " + d + d * d2 + d * d3;
 
         textView.setText(s);
 

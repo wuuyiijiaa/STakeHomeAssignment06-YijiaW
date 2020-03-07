@@ -11,7 +11,7 @@
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
-        android:textSize="36sp"/>
+        android:text=""
+        android:textSize="36sp" />
 
 </LinearLayout>
